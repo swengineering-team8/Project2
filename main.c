@@ -29,12 +29,18 @@ int main(){
 
 //파일 1의 정보를 가져오는 함수 작성
 void filestat1(){
-    
+    	char path[] = "text1";
+	int res = stat(path,&stat1);
+	if(res == -1)
+		printf("Erorr: %s exists.\n", path);
 }
 
 //파일 2의 정보를 가져오는 함수 작성
 void filestat2(){
-    
+    	char path[] = "text2";
+	int res = stat(path,&stat1);
+	if(res == -1)
+		printf("Erorr: %s exists.\n", path);
 }
 
 //파일 1의 시간 정보를 가져오는 함수 작성
